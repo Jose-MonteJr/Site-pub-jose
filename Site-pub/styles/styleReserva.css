@@ -29,7 +29,6 @@
     left: 0;
     height: 60px;
     font-family: var(--fonte-secundaria);
-    border-bottom: 5px solid #00322D;
 }
 
 .cabecalho__logotipo {
@@ -76,18 +75,38 @@ body {
     box-sizing: border-box;
     background-color: var(--cor-primaria);
     color: var(--cor-secundaria);
-    font-family: var(--fonte-principal);
-    overflow: hidden;
+    font-family: var(--fonte-secundaria);
+
 }
 
-.imgQuintal{
-    height: 100vh; 
-  display: flex;
-  justify-content: center; 
-  align-items: center;   
+.conteudo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
 }
 
-.imgQuintal img {
-  width: 700px; 
-  height: auto;
+.conteudo__form {
+    display: flex;
+    justify-content: center;
+}
+
+.conteudo__box__form {
+    display: flex;
+    flex-direction: column;
+    font-size: var(--fonte-tamanho-texto);
+    color: var(--cor-terciaria);
+}
+
+.conteudo__box__titulo {
+    font-size: var(--fonte-tamanho-titulo);
+    padding: 2%;
+    color: var(--cor-terciaria);
+}
+
+.conteudo__button {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
 }

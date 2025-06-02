@@ -15,8 +15,18 @@
 }
 
 * {
-    padding: 0;
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: block;
+    box-sizing: border-box;
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+    font-family: var(--fonte-principal);
+    text-align: center;
 }
 
 .cabecalho {
@@ -25,11 +35,11 @@
     align-items: center;
     padding: 20px 15px;
     background-color: var(--cor-terciaria);
-    top: 0;
-    left: 0;
-    height: 60px;
+    height: 100px;
     font-family: var(--fonte-secundaria);
-    border-bottom: 5px solid #00322D;
+    width: 100%;       
+    box-sizing: border-box;
+    border-bottom: 5px solid #00322D; 
 }
 
 .cabecalho__logotipo {
@@ -72,22 +82,10 @@
     background-color: #00211D;
 }
 
-body {
-    box-sizing: border-box;
-    background-color: var(--cor-primaria);
-    color: var(--cor-secundaria);
-    font-family: var(--fonte-principal);
-    overflow: hidden;
-}
-
-.imgQuintal{
-    height: 100vh; 
-  display: flex;
-  justify-content: center; 
-  align-items: center;   
-}
-
-.imgQuintal img {
-  width: 700px; 
-  height: auto;
+.local{
+  text-align: center;
+  color: var(--cor-terciaria);
+  font-size: 30px;
+  display: inline-block;         
+ 
 }

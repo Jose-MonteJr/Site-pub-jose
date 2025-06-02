@@ -15,8 +15,18 @@
 }
 
 * {
-    padding: 0;
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: block;
+    box-sizing: border-box;
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+    font-family: var(--fonte-principal);
+    text-align: center;
 }
 
 .cabecalho {
@@ -25,11 +35,11 @@
     align-items: center;
     padding: 20px 15px;
     background-color: var(--cor-terciaria);
-    top: 0;
-    left: 0;
-    height: 60px;
+    height: 100px;
     font-family: var(--fonte-secundaria);
-    border-bottom: 5px solid #00322D;
+    width: 100%;       
+    box-sizing: border-box;
+    border-bottom: 5px solid #00322D; 
 }
 
 .cabecalho__logotipo {
@@ -72,22 +82,52 @@
     background-color: #00211D;
 }
 
-body {
-    box-sizing: border-box;
-    background-color: var(--cor-primaria);
-    color: var(--cor-secundaria);
-    font-family: var(--fonte-principal);
-    overflow: hidden;
+
+
+
+h1{
+  text-align: center;
+  color: var(--cor-terciaria);
+  font-size: 50px;
+  display: inline-block;         
+  border-bottom: 5px solid var(--cor-terciaria); 
+ padding: 0 20px 10px 20px; 
+  
+ 
 }
 
-.imgQuintal{
-    height: 100vh; 
-  display: flex;
-  justify-content: center; 
-  align-items: center;   
+
+.principais{
+    color: #F5F5F7;
+    font-size: 25px;
+    font-weight: bold;
+    
+}
+table {
+    margin: 0 auto;
+    width: 1000px;
+    border-collapse: collapse;
+    
 }
 
-.imgQuintal img {
-  width: 700px; 
-  height: auto;
+td, th {
+    /* border-right: 2px solid #537D5D; */
+    border-bottom: 2px solid #537D5D;
+    padding: 20px;
 }
+
+.container {
+    color: var(--cor-terciaria);
+   display: flex;
+    justify-content: center;
+}
+
+.happy_hour_footer {
+  padding: 5px;
+  text-align: center;
+  font-weight: bold;
+  color: #EDF4C2; 
+  font-size: 1.1rem;
+  border-top: 2px solid var(--cor-terciaria);
+}
+

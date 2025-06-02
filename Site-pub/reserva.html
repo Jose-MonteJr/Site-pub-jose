@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/trevo.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles/styleReserva.css">
+    <title>Reserva</title>
+</head>
+
+<body>
+    <header class="cabecalho">
+        <span class="cabecalho__logotipo">Quintal Bar</span>
+        <nav class="cabecalho__nav">
+            <ul class="cabecalho__nav__menu">
+                <a class="cabecalho__nav__menu__links" href="index.html" rel="next">Home</a>
+                <a class="cabecalho__nav__menu__links" href="cardapio.html" rel="next">Cardápio</a>
+                <a class="cabecalho__nav__menu__links" href="HappyHour.html" rel="next">Happy Hour</a>
+                <a class="cabecalho__nav__menu__links" href="reserva.html">Reserva</a>
+            </ul>
+        </nav>
+        <a class="cabecalho__contato" href="localizacao.html">Local</a>
+    </header>
+    <main>
+        <div class="conteudo">
+            <div class="conteudo__box">
+
+                <form class="conteudo__box__form" action="" method="get">
+                    <section class="conteudo__form">
+                        <div class="conteudo__box__1">
+                            <h1 class="conteudo__box__titulo">Dados pessoais</h1>
+
+                            <label for="inome">Nome:</label> <br>
+                            <input type="text" name="nome" id="inome" placeholder="Digite seu nome" required>
+                            <br>
+                            <label for="iemail">Email:</label> <br>
+                            <input type="email" name="email" id="iemail" placeholder="Digite seu email" required>
+                            <br>
+                            <label for="itel">Telefone para contato:</label> <br>
+                            <input type="tel" name="tel" id="itel" autocomplete="tel" pattern="^\(\d{2}\)\d{4,5}-\d{4}$"
+                                required placeholder="(xx)xxxx-xxxx">
+                            <br>
+                            <label for="idad">Idade:</label> <br>
+                            <input type="number" name="idade" id="idad" placeholder="Idade" min="0" max="100" required>
+                            <br><br>
+                            <label for="ireserva">Reserva para:</label><br>
+                            <select name="reserva" id="ireserva" required>
+                                <optgroup label="Local">
+                                    <option value="frente">Cadeira em frente ao bar</option>
+                                    <option value="salao">Mesa no salão</option>
+                                    <option value="privado">Mesa privada</option>
+                                </optgroup>
+                            </select>
+                            <br>
+                            <label for="imesa">Mesa/cadeira para quantos:</label> <br>
+                            <input type="number" name="mesa" id="imesa" min="1" max="15" required
+                                placeholder="Quantidade de pessoas">
+                            <br>
+                            <label for="idata">Data da reserva</label> <br>
+                            <input type="date" name="data" id="idata" required>
+                            <br>
+                            <label for="ihorario">Horário da reserva:</label> <br>
+                            <input type="time" name="horario" id="ihorario" required>
+                        </div>
+                        <div class="conteudo__box__2">
+                            <h1 class="conteudo__box__titulo">Eventos</h1>
+
+                            <label for="">Algum evento especial:</label> <br><br>
+                            <input type="radio" name="evento" id="ianiv">
+                            <label for="ianiv">Aniversário</label> <br>
+                            <input type="radio" name="evento" id="iconfra">
+                            <label for="iconfra">Confraternização</label> <br><br>
+
+                            <label for="iobservacao">Diga suas observações</label> <br>
+                            <textarea name="observacao" id="iobservacao" cols="25" rows="5"
+                                placeholder="Digite suas observações aqui"></textarea>
+
+                        </div>
+                    </section>
+
+                    <section class="conteudo__button">
+                        <button type="submit">Enviar</button>
+                        <button type="reset">Limpar</button>
+                    </section>
+                </form>
+            </div>
+        </div>
+    </main>
+
+
+</body>
+
+</html>
